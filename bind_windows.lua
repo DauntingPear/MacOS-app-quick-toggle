@@ -1,5 +1,14 @@
 -- osascript -e 'id of app "App Name"'
 local windows = {
+    arc = {
+        modifier = 'option',
+        key = 'a',
+        bundle_ID = '',
+        title = 'arc',
+        manage_size = false,
+        frame_properties = {}
+    },
+
     kitty = {
         modifier = 'option',
         key = 'return',
@@ -41,6 +50,24 @@ local windows = {
         key = 't',
         bundle_ID = '',
         title = 'Things3',
+        manage_size = false,
+        frame_properties = {},
+    },
+
+    zed = {
+        modifier = 'option',
+        key = 'z',
+        bundle_ID = '',
+        title = 'Zed',
+        manage_size = false,
+        frame_properties = {},
+    },
+
+    gitbutler = {
+        modifier = 'option',
+        key = 'g',
+        bundle_ID = '',
+        title = 'Gitbutler',
         manage_size = false,
         frame_properties = {},
     }
