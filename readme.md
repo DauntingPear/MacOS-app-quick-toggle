@@ -33,7 +33,7 @@ local windows = {
 }
 ```
 The `bundle_ID` field is automatically filled, and should not be manually filled. Could be changed in a future update. 
-This is done by running an osascript command `osascript -e 'id of app 'APP'`. This can be run in a temrinal as well to get the BundleID of a mac app.
+This is done by running an osascript command `osascript -e 'id of app "APP"`. This can be run in a temrinal as well to get the BundleID of a mac app.
 
 There currently is not any error handling for this command so if it breaks it will break. The most common error is HammerSpoon dying and not responding. To fix this, open Activity monitor and force quit the process. This often also results in the app bound to the keybind dying as well. This only ocurs when the hotkey is pressed. Another way it breaks is if the `frame_properties` field of the app sets it to an improper size, such as 0, a decimal/fraction, or a size that is too small. In this case, both hammerspoon and the app will have to be forcefully exited and restarted.
 
